@@ -1,11 +1,18 @@
 {
+<<<<<<< HEAD
   "name": "arepas-bivora-clean",
   "version": "0.1.0",
+=======
+  "name": "arepas-bivora",
+  "type": "module",
+  "version": "1.0.10",
+>>>>>>> d2552e0871ed0253f3be6bae75aad1bfb13a2667
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+<<<<<<< HEAD
     "lint": "eslint"
   },
   "dependencies": {
@@ -24,3 +31,39 @@
     "typescript": "^5"
   }
 }
+=======
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.9.0",
+    "@prisma/client": "^7.9.0",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-select": "^2.0.0",
+    "clsx": "^2.1.1",
+    "next": "14.2.15",
+    "pg": "^8.12.0",
+    "prisma": "^7.9.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwind-merge": "^2.4.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/pg": "^8.11.6",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.15",
+    "postcss": "8.4.31",
+    "tailwindcss": "^3.3.0"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
+>>>>>>> d2552e0871ed0253f3be6bae75aad1bfb13a2667
